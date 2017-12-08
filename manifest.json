@@ -1,0 +1,13 @@
+{
+  "name": "T-Rex Gamepad",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Google Chrome Extension for provide a Gamepad controls for T-Rex Chrome Offline Game.",
+  "icons" : {
+    "16" : "icon.png"
+  },
+  "content_scripts": [{
+    "matches": [ "https://chromedino.com/*" ],
+    "js": [ "gamepad.js", "index.js" ]
+  }]
+}
